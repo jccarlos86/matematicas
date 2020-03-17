@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Sumas</title>
+        <link rel="stylesheet" href="../recursos/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../recursos/fontAwesome/all.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../recursos/animateCSS/animate.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-3">
+
+                <div class="col col-md-12">
+                    <header></header>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"></div>
+
+                <div class="col col-md-4">
+                    <form action="">
+                        <div class="form-group">
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="operacion">Sumas</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col btn-group">
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-10">
+                                            <input id="num1" type="number" class="form-control">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col btn-group">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <label class="simbolo-suma">
+                                                +
+                                            </label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input id="num2" type="number" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="btn-group float-right">
+                                        <button id="start" class="btn btn-primary" class="shake animated">Comenzar</button>
+                                        <button class="btn btn-secondary" id="aleatorio">Al Azar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-4"></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col" id="resultado">
+                    <table id="tablaResultado" class="tabla-operacion">
+                        <thead></thead>
+                        <tbody></tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Resuelve el problema</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label" id="operacion"></label>
+                                    <input type="text" class="form-control" id="respuestaUsuario">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" id="contestar">Responder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="../recursos/jquery/jquery-3.2.1.min.js"></script>
+        <script src="../recursos/bootstrap/bootstrap.min.js"></script>
+        <script src="../js/sumas.js"></script>
+        <script src="../recursos/fontAwesome/all.js"></script>
+    </body>
+</html>

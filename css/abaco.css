@@ -1,0 +1,70 @@
+body{
+    padding: 0;
+    margin:0;
+}
+
+.contenedor-abaco{
+    position:relative;
+    width: 80%;
+    margin: 10% auto;
+}
+
+.columna-abaco{
+    position:relative;
+    display: inline-block;
+    width: 5%;
+    height:50vh; 
+    background: #ccc;
+    top: 0;
+    margin: 0;
+}
+
+.col-left{
+    left:0;
+}
+
+.col-right{
+    right:0;
+}
+
+.abaco-centro{
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    top:-30px;
+}
+
+.fila{
+    position: relative;
+    margin:30px 0;
+    padding: 0;
+}
+
+.linea{
+    position: absolute;
+    height: 5px;
+    margin:0;
+    padding: 0;
+    background: #1a1a1a;
+    width:100%;
+    top: 40%
+}
+
+.bola{
+    position: relative;
+    width:30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0px;
+    background: #4e4e4e;
+    border: 1px solid #4e4e4e;
+    
+    border-radius: 50px;
+}
+
+.bola:hover{
+    background:green;
+    cursor: pointer;
+}

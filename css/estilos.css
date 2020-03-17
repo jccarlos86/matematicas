@@ -1,0 +1,48 @@
+body{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#tablaResultado{
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    margin: 15px auto;
+}
+
+#tablaResultado tbody tr td{
+    text-align: center;
+    padding: 10px;
+}
+
+.simbolo-suma{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: -70%;
+}
+
+#num1, #num2{
+    width: 80%;
+    font-size: 25pt;
+    padding: 5px;
+}
+
+.btn-group{
+    margin:10px;
+}
+
+.fila-0{
+    background: #ccc;
+}
+
+.fila-1{
+    font-style: italic;
+    color: red;
+}
+
+.fila-4{
+    border-top: 2px solid #3f3f3f;
+    color: blue;
+}
